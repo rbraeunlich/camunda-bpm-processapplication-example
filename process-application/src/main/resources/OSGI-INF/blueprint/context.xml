@@ -1,0 +1,16 @@
+<blueprint xmlns="http://www.osgi.org/xmlns/blueprint/v1.0.0"
+	xmlns:ext="http://aries.apache.org/blueprint/xmlns/blueprint-ext/v1.0.0">
+
+  	<bean id="serviceBean"
+		class="de.blogspot.wrongtracks.example.ServiceTaskBean" />
+
+	<bean id="processApplication"
+		class="de.blogspot.wrongtracks.example.ExampleProcessApplication">
+		<argument ref="blueprintContainer"/>
+		<argument ref="blueprintBundleContext"/>
+	</bean>
+
+	<service ref="processApplication"
+		interface="org.camunda.bpm.application.ProcessApplicationInterface" />
+
+</blueprint>
