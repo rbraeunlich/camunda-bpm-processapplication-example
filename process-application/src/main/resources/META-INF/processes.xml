@@ -12,7 +12,7 @@
   <process-archive>
     <process-engine>default</process-engine>
     <properties>
-    <property name="isScanForProcessDefinitions">false</property>
+    <property name="isScanForProcessDefinitions">true</property>
     </properties>
   </process-archive>
 
