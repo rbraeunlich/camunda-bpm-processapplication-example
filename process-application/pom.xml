@@ -7,8 +7,18 @@
 	<packaging>bundle</packaging>
 	<dependencies>
 		<dependency>
+			<groupId>org.camunda.bpm</groupId>
+			<artifactId>camunda-engine</artifactId>
+			<version>7.7.0</version>
+		</dependency>
+		<dependency>
 			<groupId>org.camunda.bpm.extension.osgi</groupId>
 			<artifactId>camunda-bpm-osgi</artifactId>
+			<version>4.1.0</version>
+		</dependency>
+		<dependency>
+			<groupId>org.camunda.bpm.extension.osgi</groupId>
+			<artifactId>camunda-bpm-osgi-processapplication</artifactId>
 			<version>4.1.0</version>
 		</dependency>
 		<dependency>
@@ -17,9 +27,9 @@
 			<version>4.2.0</version>
 		</dependency>
 		<dependency>
-			<groupId>org.camunda.bpm</groupId>
-			<artifactId>camunda-engine</artifactId>
-			<version>7.7.0</version>
+			<groupId>org.osgi</groupId>
+			<artifactId>org.osgi.service.blueprint</artifactId>
+			<version>1.0.2</version>
 		</dependency>
 	</dependencies>
 	<build>
